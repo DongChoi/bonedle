@@ -7,8 +7,14 @@ const PickMode = ({ updateMode }: { updateMode: Function }) => {
   return (
     <div>
       Pick mode!
-      <li onClick={() => handleModeClick("classic")}>Classic</li>
-      <li onClick={() => handleModeClick("picture")}>Picture</li>
+      <li>
+        {" "}
+        <button onClick={() => handleModeClick("classic")}>Classic </button>
+      </li>
+      <li>
+        {" "}
+        <button onClick={() => handleModeClick("picture")}>Picture </button>
+      </li>
     </div>
   );
 };
