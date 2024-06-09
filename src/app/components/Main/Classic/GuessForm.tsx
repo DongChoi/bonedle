@@ -12,6 +12,7 @@ const GuessForm = ({
   const [value, setValue] = useState<string>("");
   const [suggestions, setSuggestions] = useState<BoneKey[]>([]);
   const [valueError, setValueError] = useState<Boolean>(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const userInput = e.target.value;
     setValue(userInput);
@@ -71,6 +72,13 @@ const GuessForm = ({
                 {suggestion}
               </li>
             ))}
+          </ul>
+        )}
+        {value && suggestions.length === 0 && (
+          <ul className="absolute left-0 right-0 border border-gray-300 rounded-md mt-2 max-h-40 overflow-y-auto w-auto bg-white z-10">
+            <li className="px-4 py-2 cursor-pointer hover:bg-gray-200">
+              No bones found.
+            </li>
           </ul>
         )}
       </form>

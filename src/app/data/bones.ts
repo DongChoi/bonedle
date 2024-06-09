@@ -1034,7 +1034,7 @@ const boneData: BoneData = {
   coxal: {
     location: "Pelvis",
     size: "20-24 cm",
-    shape: ["Large", "flat", "irregular"],
+    shape: ["Large", "Flat", "Irregular"],
     articulations: ["sacrum", "femur"],
     passages: [],
     other: [

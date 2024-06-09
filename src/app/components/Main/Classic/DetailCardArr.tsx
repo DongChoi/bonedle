@@ -19,9 +19,7 @@ const DetailCardArr = ({
   }
 
   return (
-    <div className={`h-16 w-16 ${colorHint}`}>
-      {JSON.stringify(guessDetail)}
-    </div>
+    <div className={`h-16 w-16 ${colorHint}`}>{guessArray.join(", ")}</div>
   );
 };
 
