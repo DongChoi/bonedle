@@ -6,7 +6,7 @@ const boneData: BoneData = {
   femur: {
     location: "Lower Limb",
     size: "48-53 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["head", "distalCondyles"],
     passages: ["Nutrient foramen"],
     other: [
@@ -17,7 +17,7 @@ const boneData: BoneData = {
   tibia: {
     location: "Lower Limb",
     size: "34-38 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal", "distal"],
     passages: ["Nutrient foramen", "Medial and Lateral condyles (for vessels)"],
     other: ["Projections: Medial malleolus"],
@@ -26,7 +26,7 @@ const boneData: BoneData = {
   fibula: {
     location: "Lower Limb",
     size: "37-45 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal", "distal"],
     passages: ["Nutrient foramen"],
     other: ["Projections: Head, Lateral malleolus"],
@@ -35,7 +35,7 @@ const boneData: BoneData = {
   radius: {
     location: "Upper Limb",
     size: "25-28 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal", "distal"],
     passages: ["Nutrient foramen"],
     other: ["Projections: Styloid process"],
@@ -44,7 +44,7 @@ const boneData: BoneData = {
   ulna: {
     location: "Upper Limb",
     size: "26-31 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal", "distal"],
     passages: ["Nutrient foramen"],
     other: ["Projections: Olecranon process, Coronoid process"],
@@ -53,7 +53,7 @@ const boneData: BoneData = {
   humerus: {
     location: "Upper Limb",
     size: "32-36 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal", "distal"],
     passages: ["Nutrient foramen"],
     other: [
@@ -64,7 +64,7 @@ const boneData: BoneData = {
   scapula: {
     location: "Upper Limb (Pectoral Girdle)",
     size: "14-18 cm",
-    shape: "Flat",
+    shape: ["Flat"],
     articulations: ["proximal", "other"],
     passages: [],
     other: [
@@ -76,7 +76,7 @@ const boneData: BoneData = {
   clavicle: {
     location: "Thoracic (Pectoral Girdle)",
     size: "15-18 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["sternal", "acromial"],
     passages: [],
     other: ["Projections: Acromial end, Sternal end"],
@@ -85,7 +85,7 @@ const boneData: BoneData = {
   c1: {
     location: "Vertebral Column (Cervical)",
     size: "7 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["occipitalCondyles", "axis"],
     passages: ["Vertebral foramen"],
     other: ["Projections: Anterior and Posterior arches, Lateral masses"],
@@ -94,7 +94,7 @@ const boneData: BoneData = {
   c2: {
     location: "Vertebral Column (Cervical)",
     size: "6 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["atlas", "c3"],
     passages: ["Vertebral foramen"],
     other: ["Projections: Odontoid process (Dens)"],
@@ -103,7 +103,7 @@ const boneData: BoneData = {
   c3: {
     location: "Vertebral Column (Cervical)",
     size: "6-7 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["c2", "c4"],
     passages: ["Vertebral foramen"],
     other: [
@@ -115,7 +115,7 @@ const boneData: BoneData = {
   c7: {
     location: "Vertebral Column (Cervical)",
     size: "6-7 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["c6", "t1"],
     passages: ["Vertebral foramen"],
     other: ["Projections: Long spinous process"],
@@ -124,7 +124,7 @@ const boneData: BoneData = {
   t1: {
     location: "Vertebral Column (Thoracic)",
     size: "7-8 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["c7", "t2", "ribs"],
     passages: ["Vertebral foramen"],
     other: [
@@ -136,7 +136,7 @@ const boneData: BoneData = {
   t12: {
     location: "Vertebral Column (Thoracic)",
     size: "7-8 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["t11", "l1", "ribs"],
     passages: ["Vertebral foramen"],
     other: [
@@ -148,7 +148,7 @@ const boneData: BoneData = {
   l1: {
     location: "Vertebral Column (Lumbar)",
     size: "10-11 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["t12", "l2"],
     passages: ["Vertebral foramen"],
     other: [
@@ -160,7 +160,7 @@ const boneData: BoneData = {
   l5: {
     location: "Vertebral Column (Lumbar)",
     size: "10-11 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["l4", "sacrum"],
     passages: ["Vertebral foramen"],
     other: [
@@ -172,7 +172,7 @@ const boneData: BoneData = {
   sacrum: {
     location: "Pelvis",
     size: "11-13 cm",
-    shape: "Triangular",
+    shape: ["Irregular"],
     articulations: ["l5", "ilium"],
     passages: ["Sacral foramina (for nerves)", "Sacral canal"],
     other: ["Fused vertebrae (S1-S5)"],
@@ -181,7 +181,7 @@ const boneData: BoneData = {
   coccyx: {
     location: "Pelvis",
     size: "1-1.5 cm",
-    shape: "Triangular",
+    shape: ["Irregular"],
     articulations: ["sacrum"],
     passages: [],
     other: ["Fused rudimentary vertebrae (usually 4)"],
@@ -190,7 +190,7 @@ const boneData: BoneData = {
   ilium: {
     location: "Pelvis",
     size: "23-26 cm",
-    shape: "Fan-shaped",
+    shape: ["Fan-shaped"],
     articulations: ["sacrum", "ischium", "pubis", "femur"],
     passages: ["Iliac fossa"],
     other: [
@@ -201,7 +201,7 @@ const boneData: BoneData = {
   ischium: {
     location: "Pelvis",
     size: "18-21 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["ilium", "pubis"],
     passages: ["Ischial notch"],
     other: ["Projections: Ischial tuberosity"],
@@ -210,7 +210,7 @@ const boneData: BoneData = {
   pubis: {
     location: "Pelvis",
     size: "15-16 cm",
-    shape: "Quadrilateral",
+    shape: ["Irregular"],
     articulations: ["ilium", "ischium"],
     passages: ["Obturator foramen"],
     other: ["Projections: Pubic symphysis"],
@@ -219,7 +219,7 @@ const boneData: BoneData = {
   mandible: {
     location: "Skull",
     size: "10-12 cm",
-    shape: "Horseshoe",
+    shape: ["Irregular"],
     articulations: ["temporal"],
     passages: ["Mandibular canal (for nerves and vessels)"],
     other: ["Projections: Condylar process, Coronoid process"],
@@ -228,7 +228,7 @@ const boneData: BoneData = {
   maxilla: {
     location: "Skull",
     size: "12-14 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: [
       "frontal",
       "zygomatic",
@@ -244,7 +244,7 @@ const boneData: BoneData = {
   zygomatic: {
     location: "Skull",
     size: "4-5 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["maxilla", "frontal", "temporal", "sphenoid"],
     passages: [],
     other: ["Projections: Zygomatic arch"],
@@ -253,7 +253,7 @@ const boneData: BoneData = {
   frontal: {
     location: "Skull",
     size: "11-12 cm",
-    shape: "Scalloped",
+    shape: ["Irregular"],
     articulations: ["parietal", "sphenoid", "ethmoid", "maxilla", "zygomatic"],
     passages: ["Frontal sinuses"],
     other: ["Projections: Supraorbital margin, Glabella"],
@@ -262,7 +262,7 @@ const boneData: BoneData = {
   parietal: {
     location: "Skull",
     size: "12-13 cm",
-    shape: "Quadrilateral",
+    shape: ["Irregular"],
     articulations: ["frontal", "occipital", "temporal", "sphenoid"],
     passages: [],
     other: ["Projections: Sagittal suture, Lambdoid suture"],
@@ -271,7 +271,7 @@ const boneData: BoneData = {
   temporal: {
     location: "Skull",
     size: "11-12 cm",
-    shape: "Complex",
+    shape: ["Irregular"],
     articulations: [
       "parietal",
       "occipital",
@@ -286,7 +286,7 @@ const boneData: BoneData = {
   occipital: {
     location: "Skull",
     size: "12-14 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["parietal", "sphenoid", "atlas"],
     passages: ["Foramen magnum"],
     other: ["Projections: Occipital condyle"],
@@ -295,7 +295,7 @@ const boneData: BoneData = {
   sphenoid: {
     location: "Skull",
     size: "8-9 cm",
-    shape: "Butterfly-shaped",
+    shape: ["Irregular"],
     articulations: [
       "frontal",
       "parietal",
@@ -314,7 +314,7 @@ const boneData: BoneData = {
   ethmoid: {
     location: "Skull",
     size: "3-4 cm",
-    shape: "Cuboid",
+    shape: ["Irregular"],
     articulations: [
       "frontal",
       "sphenoid",
@@ -333,7 +333,7 @@ const boneData: BoneData = {
   vomer: {
     location: "Skull",
     size: "2-3 cm",
-    shape: "V-shaped",
+    shape: ["V-shaped"],
     articulations: ["sphenoid", "ethmoid", "maxilla", "palatine", "nasal"],
     passages: [],
     other: ["Forms lower part of nasal septum"],
@@ -342,7 +342,7 @@ const boneData: BoneData = {
   nasal: {
     location: "Skull",
     size: "5-6 cm",
-    shape: "Flat",
+    shape: ["Flat"],
     articulations: ["frontal", "ethmoid", "maxilla", "vomer"],
     passages: [],
     other: ["Forms bridge of the nose"],
@@ -351,7 +351,7 @@ const boneData: BoneData = {
   lacrimal: {
     location: "Skull",
     size: "1-2 cm",
-    shape: "Thin plate",
+    shape: ["Thin plate"],
     articulations: ["frontal", "ethmoid", "maxilla", "palatine", "zygomatic"],
     passages: ["Lacrimal canal (for tears)"],
     other: ["Forms part of the eye socket"],
@@ -360,7 +360,7 @@ const boneData: BoneData = {
   palatine: {
     location: "Skull",
     size: "5-6 cm",
-    shape: "L-shaped",
+    shape: ["L-shaped"],
     articulations: ["maxilla", "vomer", "sphenoid", "ethmoid", "lacrimal"],
     passages: ["Greater palatine canals (for nerves and vessels)"],
     other: ["Forms part of the hard palate and floor of the nasal cavity"],
@@ -369,7 +369,7 @@ const boneData: BoneData = {
   sternum: {
     location: "Thorax",
     size: "17-20 cm",
-    shape: "Flat",
+    shape: ["Flat"],
     articulations: ["clavicle", "ribs"],
     passages: [],
     other: ["Projections: Manubrium, Body, Xiphoid process"],
@@ -378,7 +378,7 @@ const boneData: BoneData = {
   "rib 1": {
     location: "Thorax",
     size: "Variable",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T1", "sternum"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -387,7 +387,7 @@ const boneData: BoneData = {
   "rib 2": {
     location: "Thorax",
     size: "42-48 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T2", "sternum"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -396,7 +396,7 @@ const boneData: BoneData = {
   "rib 3": {
     location: "Thorax",
     size: "43-49 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T3", "sternum"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -405,7 +405,7 @@ const boneData: BoneData = {
   "rib 4": {
     location: "Thorax",
     size: "44-50 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T4", "sternum"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -414,7 +414,7 @@ const boneData: BoneData = {
   "rib 5": {
     location: "Thorax",
     size: "45-51 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T5", "sternum"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -423,7 +423,7 @@ const boneData: BoneData = {
   "rib 6": {
     location: "Thorax",
     size: "46-52 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T6", "sternum"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -432,7 +432,7 @@ const boneData: BoneData = {
   "rib 7": {
     location: "Thorax",
     size: "47-53 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T7", "sternum"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -441,7 +441,7 @@ const boneData: BoneData = {
   "rib 8": {
     location: "Thorax",
     size: "48-54 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T8", "costal_cartilage"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -450,7 +450,7 @@ const boneData: BoneData = {
   "rib 9": {
     location: "Thorax",
     size: "49-55 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T9", "costal_cartilage"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -459,7 +459,7 @@ const boneData: BoneData = {
   "rib 10": {
     location: "Thorax",
     size: "50-56 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T10", "costal_cartilage"],
     passages: [],
     other: ["Head, Neck, Shaft"],
@@ -468,7 +468,7 @@ const boneData: BoneData = {
   "rib 11": {
     location: "Thorax",
     size: "45-51 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T11"],
     passages: [],
     other: ["Head, Neck, Shaft", "Floating rib - no connection to the sternum"],
@@ -477,7 +477,7 @@ const boneData: BoneData = {
   "rib 12": {
     location: "Thorax",
     size: "40-46 cm",
-    shape: "Long, curved",
+    shape: ["Long", "curved"],
     articulations: ["T12"],
     passages: [],
     other: ["Head, Neck, Shaft", "Floating rib - no connection to the sternum"],
@@ -486,7 +486,7 @@ const boneData: BoneData = {
   scaphoid: {
     location: "Wrist",
     size: "1-1.5 cm",
-    shape: "Boat-shaped",
+    shape: ["Boat-shaped"],
     articulations: ["radius", "lunate", "capitate", "trapezium"],
     passages: [],
     other: [],
@@ -495,7 +495,7 @@ const boneData: BoneData = {
   lunate: {
     location: "Wrist",
     size: "1-1.5 cm",
-    shape: "Moon-shaped",
+    shape: ["Moon-shaped"],
     articulations: ["radius", "scaphoid", "capitate", "hamate", "triquetral"],
     passages: [],
     other: [],
@@ -504,7 +504,7 @@ const boneData: BoneData = {
   triquetral: {
     location: "Wrist",
     size: "1-1.5 cm",
-    shape: "Triangular",
+    shape: ["Irregular"],
     articulations: ["ulna", "lunate", "pisiform", "hamate"],
     passages: [],
     other: [],
@@ -513,7 +513,7 @@ const boneData: BoneData = {
   pisiform: {
     location: "Wrist",
     size: "0.8-1 cm",
-    shape: "Pea-shaped",
+    shape: ["short"],
     articulations: ["ulna", "triquetral"],
     passages: [],
     other: [],
@@ -522,7 +522,7 @@ const boneData: BoneData = {
   hamate: {
     location: "Wrist",
     size: "2-2.5 cm",
-    shape: "Hook-shaped",
+    shape: ["Hook-shaped"],
     articulations: [
       "lunate",
       "triquetral",
@@ -537,7 +537,7 @@ const boneData: BoneData = {
   trapezoid: {
     location: "Wrist",
     size: "1-1.5 cm",
-    shape: "Wedge-shaped",
+    shape: ["Wedge-shaped"],
     articulations: ["scaphoid", "trapezium", "capitate", "Metacarpal I"],
     passages: [],
     other: [],
@@ -546,7 +546,7 @@ const boneData: BoneData = {
   trapezium: {
     location: "Wrist",
     size: "1-1.5 cm",
-    shape: "Saddle-shaped",
+    shape: ["Saddle-shaped"],
     articulations: ["scaphoid", "trapezoid", "Metacarpal I"],
     passages: [],
     other: [],
@@ -555,7 +555,7 @@ const boneData: BoneData = {
   capitate: {
     location: "Wrist",
     size: "2-2.5 cm",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["scaphoid", "lunate", "hamate", "Metacarpal III"],
     passages: [],
     other: [],
@@ -564,7 +564,7 @@ const boneData: BoneData = {
   "metacarpal I": {
     location: "Hand",
     size: "4-5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["trapezium", "proxmial phalanx I"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -573,7 +573,7 @@ const boneData: BoneData = {
   "metacarpal II": {
     location: "Hand",
     size: "4.5-5.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["trapezoid", "proxmial phalanx II"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -582,7 +582,7 @@ const boneData: BoneData = {
   "metacarpal III": {
     location: "Hand",
     size: "5-6 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["capitate", "proxmial phalanx III"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -591,7 +591,7 @@ const boneData: BoneData = {
   "metacarpal IV": {
     location: "Hand",
     size: "4.5-5.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["hamate", "proximal phalanx IV"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -600,7 +600,7 @@ const boneData: BoneData = {
   "metacarpal V": {
     location: "Hand",
     size: "4-5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["hamate", "proximal phalanx V"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -609,7 +609,7 @@ const boneData: BoneData = {
   "proximal phalanx V (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal V", "middle phalanx V"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -618,7 +618,7 @@ const boneData: BoneData = {
   "proximal phalanx IV (manual)": {
     location: "Hand",
     size: "3.5-4 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal IV", "middle phalanx IV"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -627,7 +627,7 @@ const boneData: BoneData = {
   "proximal phalanx III (manual)": {
     location: "Hand",
     size: "4-4.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal III", "middle phalanx III"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -636,7 +636,7 @@ const boneData: BoneData = {
   "proximal phalanx II (manual)": {
     location: "Hand",
     size: "4.5-5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal II", "middle phalanx II"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -645,7 +645,7 @@ const boneData: BoneData = {
   "proximal phalanx I (manual)": {
     location: "Hand",
     size: "6-7 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal I", "middle phalanx I"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -654,7 +654,7 @@ const boneData: BoneData = {
   "middle phalanx II (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal phalanx II", "distal phalanx II"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -663,7 +663,7 @@ const boneData: BoneData = {
   "middle phalanx III (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal phalanx III", "distal phalanx III"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -672,7 +672,7 @@ const boneData: BoneData = {
   "middle phalanx IV (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal phalanx IV", "distal phalanx IV"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -681,7 +681,7 @@ const boneData: BoneData = {
   "middle phalanx V (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal phalanx V", "distal phalanx V"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -690,7 +690,7 @@ const boneData: BoneData = {
   "distal phalanx I (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx I"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -699,7 +699,7 @@ const boneData: BoneData = {
   "distal phalanx II (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx II"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -708,7 +708,7 @@ const boneData: BoneData = {
   "distal phalanx III (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx III"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -717,7 +717,7 @@ const boneData: BoneData = {
   "distal phalanx IV (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx IV"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -726,7 +726,7 @@ const boneData: BoneData = {
   "distal phalanx V (manual)": {
     location: "Hand",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx V"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -735,7 +735,7 @@ const boneData: BoneData = {
   patella: {
     location: "Knee",
     size: "3-4 cm",
-    shape: "Triangular",
+    shape: ["Irregular"],
     articulations: ["femur"],
     passages: [],
     other: ["Sesamoid bone (embedded within a tendon)"],
@@ -744,7 +744,7 @@ const boneData: BoneData = {
   talus: {
     location: "Ankle",
     size: "Largest tarsal bone",
-    shape: "Irregular",
+    shape: ["Irregular"],
     articulations: ["tibia", "calcaneus", "navicular"],
     passages: [],
     other: ["Plays a key role in ankle movement"],
@@ -753,7 +753,7 @@ const boneData: BoneData = {
   calcaneus: {
     location: "Ankle/Foot",
     size: "Largest tarsal bone",
-    shape: "Elongated",
+    shape: ["Elongated"],
     articulations: [
       "talus",
       "cuboid",
@@ -768,7 +768,7 @@ const boneData: BoneData = {
   navicular: {
     location: "Midfoot",
     size: "Cuboid",
-    shape: "Boat-shaped",
+    shape: ["Boat-shaped"],
     articulations: [
       "talus",
       "Medial cuneiform",
@@ -782,7 +782,7 @@ const boneData: BoneData = {
   "medial cuneiform": {
     location: "Midfoot",
     size: "Smallest cuneiform bone",
-    shape: "Wedge-shaped",
+    shape: ["Wedge-shaped"],
     articulations: ["navicular", "metatarsal I", "medial cuneiform"],
     passages: [],
     other: ["Located on the medial side of the midfoot"],
@@ -791,7 +791,7 @@ const boneData: BoneData = {
   "intermediate cuneiform": {
     location: "Midfoot",
     size: "Middle-sized cuneiform bone",
-    shape: "Wedge-shaped",
+    shape: ["Wedge-shaped"],
     articulations: [
       "navicular",
       "metatarsal II",
@@ -805,7 +805,7 @@ const boneData: BoneData = {
   "lateral cuneiform": {
     location: "Midfoot",
     size: "Largest cuneiform bone",
-    shape: "Wedge-shaped",
+    shape: ["Wedge-shaped"],
     articulations: [
       "navicular",
       "metatarsal III",
@@ -819,7 +819,7 @@ const boneData: BoneData = {
   cuboid: {
     location: "Midfoot",
     size: "Variable",
-    shape: "Cuboid",
+    shape: ["Irregular"],
     articulations: [
       "calcaneus",
       "lateral cuneiform",
@@ -833,8 +833,9 @@ const boneData: BoneData = {
   "metatarsal I": {
     location: "Foot (forefoot)",
     size: "Shortest and thickest metatarsal",
-    shape:
+    shape: [
       "Slightly different from others due to articulation with sesamoid bones",
+    ],
     articulations: ["medial cuneiform", "sesamoid bones", "proximal phalanx I"],
     passages: [],
     other: ["Plays a crucial role in propulsion during walking and running"],
@@ -843,7 +844,7 @@ const boneData: BoneData = {
   "metatarsal II": {
     location: "Foot (forefoot)",
     size: "Longest metatarsal",
-    shape: "Elongated",
+    shape: ["Elongated"],
     articulations: ["medial cuneiform", "proximal phalanx II"],
     passages: [],
     other: ["Provides a stable base for the second toe"],
@@ -852,7 +853,7 @@ const boneData: BoneData = {
   "metatarsal III": {
     location: "Foot (forefoot)",
     size: "Variable",
-    shape: "Elongated",
+    shape: ["Elongated"],
     articulations: ["lateral cuneiform", "proximal phalanx III"],
     passages: [],
     other: ["Contributes to the arch of the foot"],
@@ -861,7 +862,7 @@ const boneData: BoneData = {
   "metatarsal IV": {
     location: "Foot (forefoot)",
     size: "Variable",
-    shape: "Elongated",
+    shape: ["Elongated"],
     articulations: ["cuboid", "proximal phalanx IV"],
     passages: [],
     other: ["Provides support for the lateral aspect of the foot"],
@@ -870,133 +871,133 @@ const boneData: BoneData = {
   "metatarsal V": {
     location: "Foot (forefoot)",
     size: "Second shortest metatarsal",
-    shape: "Elongated",
+    shape: ["Elongated"],
     articulations: ["cuboid", "proximal phalanx V"],
     passages: [],
     other: ["Provides attachment for the muscles that move the pinky toe"],
     name: "metatarsal V",
   },
   "proximal phalanx V (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal V", "middle phalanx V"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "proximal phalanx V (pedal)",
   },
   "proximal phalanx IV (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3.5-4 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal IV", "middle phalanx IV"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "proximal phalanx IV (pedal)",
   },
   "proximal phalanx III (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "4-4.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal III", "middle phalanx III"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "proximal phalanx III (pedal)",
   },
   "proximal phalanx II (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "4.5-5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal II", "middle phalanx II"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "proximal phalanx II (pedal)",
   },
   "proximal phalanx I (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "6-7 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["metacarpal I", "middle phalanx I"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "proximal phalanx I (pedal)",
   },
   "middle phalanx II (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal phalanx II", "distal phalanx II"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "middle phalanx II (pedal)",
   },
   "middle phalanx III (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal phalanx III", "distal phalanx III"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "middle phalanx III (pedal)",
   },
   "middle phalanx IV (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal phalanx IV", "distal phalanx IV"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "middle phalanx IV (pedal)",
   },
   "middle phalanx V (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["proximal phalanx V", "distal phalanx V"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "middle phalanx V (pedal)",
   },
   "distal phalanx I (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx I"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "distal phalanx I (pedal)",
   },
   "distal phalanx II (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx II"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "distal phalanx II (pedal)",
   },
   "distal phalanx III (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx III"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "distal phalanx III (pedal)",
   },
   "distal phalanx IV (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx IV"],
     passages: [],
     other: ["Base, Shaft, Head"],
     name: "distal phalanx IV (pedal)",
   },
   "distal phalanx V (pedal)": {
-    location: "Hand",
+    location: "Foot",
     size: "3-3.5 cm",
-    shape: "Long",
+    shape: ["Long"],
     articulations: ["middle phalanx V"],
     passages: [],
     other: ["Base, Shaft, Head"],
@@ -1005,7 +1006,7 @@ const boneData: BoneData = {
   "inferior nasal concha": {
     location: "Nasal cavity",
     size: "Longest and broadest nasal concha",
-    shape: "Scroll-shaped",
+    shape: ["Scroll-shaped"],
     articulations: ["maxilla", "palatine bone"],
     passages: [],
     other: [
@@ -1018,8 +1019,8 @@ const boneData: BoneData = {
   },
   hyoid: {
     location: "Anterior neck",
-    size: "Horseshoe-shaped",
-    shape: "U-shaped",
+    size: "Irregular",
+    shape: ["U-shaped"],
     articulations: [""],
     passages: [],
     other: [
@@ -1032,11 +1033,12 @@ const boneData: BoneData = {
   },
   coxal: {
     location: "Pelvis",
-    size: "Large, flat, and irregularly shaped",
-    shape: "Composed of three parts that fuse in adulthood",
+    size: "20-24 cm",
+    shape: ["Large", "flat", "irregular"],
     articulations: ["sacrum", "femur"],
     passages: [],
     other: [
+      "Composed of three parts that fuse in adulthood",
       "Formed by the fusion of the ilium, ischium, and pubis in adults",
       "Provides support for the lower body and organs",
       "Acetabulum - a cup-shaped socket for the femur head",
@@ -1047,7 +1049,7 @@ const boneData: BoneData = {
   malleus: {
     location: "Middle ear",
     size: "Smallest of the ossicles (5-6 mm)",
-    shape: "Hammer-shaped",
+    shape: ["Hammer-shaped"],
     articulations: ["tympanic membrane", "incus"],
     passages: [],
     other: ["Manubrium (handle), Head, Lateral process, Medial process"],
@@ -1056,7 +1058,7 @@ const boneData: BoneData = {
   incus: {
     location: "Middle ear",
     size: "Middle-sized ossicle (6-7 mm)",
-    shape: "Anvil-shaped",
+    shape: ["Anvil-shaped"],
     articulations: ["malleus", "stapes"],
     passages: [],
     other: ["Body, Lenticular process, Short process, Long process"],
@@ -1065,7 +1067,7 @@ const boneData: BoneData = {
   stapes: {
     location: "Middle ear",
     size: "Smallest and lightest bone in the human body (3-4 mm)",
-    shape: "Stirrup-shaped",
+    shape: ["Stirrup-shaped"],
     articulations: ["incus", "oval window"],
     passages: [],
     other: ["Footplate, Crura (legs), Head"],
@@ -1075,6 +1077,7 @@ const boneData: BoneData = {
 
 const boneList: BoneList = [
   "femur",
+  "coxal",
   "tibia",
   "fibula",
   "radius",
@@ -1184,1388 +1187,6 @@ const boneList: BoneList = [
 
 export { boneData, boneList };
 
-// const boneData = {
-//   femur: {
-//     location: "Lower Limb",
-//     size: "48-53 cm",
-//     shape: "Long",
-//     articulations: {
-//       head: "Pelvis (acetabulum)",
-//       distalCondyles: ["Tibia (medial and lateral condyles)", "Patella"],
-//     },
-//     passages: ["Nutrient foramen"],
-//     other: [
-//       "Projections: Greater trochanter, Lesser trochanter, Lateral condyle, Medial condyle",
-//     ],
-//     name: "femur",
-//   },
-//   tibia: {
-//     location: "Lower Limb",
-//     size: "34-38 cm",
-//     shape: "Long",
-//     articulations: {
-//       proximal: "Femur (condyles)",
-//       distal: ["Talus", "Fibula (lateral malleolus)"],
-//     },
-//     passages: ["Nutrient foramen", "Medial and Lateral condyles (for vessels)"],
-//     other: ["Projections: Medial malleolus"],
-//     name: "tibia",
-//   },
-//   fibula: {
-//     location: "Lower Limb",
-//     size: "37-45 cm",
-//     shape: "Long",
-//     articulations: {
-//       proximal: "Tibia",
-//       distal: "Talus",
-//     },
-//     passages: ["Nutrient foramen"],
-//     other: ["Projections: Head, Lateral malleolus"],
-//     name: "fibula",
-//   },
-//   radius: {
-//     location: "Upper Limb",
-//     size: "25-28 cm",
-//     shape: "Long",
-//     articulations: {
-//       proximal: "Humerus",
-//       distal: ["Carpals (scaphoid, lunate)", "Ulna (radial notch)"],
-//     },
-//     passages: ["Nutrient foramen"],
-//     other: ["Projections: Styloid process"],
-//     name: "radius",
-//   },
-//   ulna: {
-//     location: "Upper Limb",
-//     size: "26-31 cm",
-//     shape: "Long",
-//     articulations: {
-//       proximal: "Humerus",
-//       distal: ["Carpals (triquetrum)", "Radius (radial notch)"],
-//     },
-//     passages: ["Nutrient foramen"],
-//     other: ["Projections: Olecranon process, Coronoid process"],
-//     name: "ulna",
-//   },
-//   humerus: {
-//     location: "Upper Limb",
-//     size: "32-36 cm",
-//     shape: "Long",
-//     articulations: {
-//       proximal: "Scapula (glenoid cavity)",
-//       distal: ["Radius (head)", "Ulna (trochlear notch)"],
-//     },
-//     passages: ["Nutrient foramen"],
-//     other: [
-//       "Projections: Greater tubercle, Lesser tubercle, Deltoid tuberosity",
-//     ],
-//     name: "humerus",
-//   },
-//   scapula: {
-//     location: "Upper Limb (Pectoral Girdle)",
-//     size: "14-18 cm",
-//     shape: "Flat",
-//     articulations: {
-//       proximal: "Clavicle (acromial facet)",
-//       other: "Humerus (glenoid cavity)",
-//     },
-//     passages: [],
-//     other: [
-//       "Projections: Acromion, Coracoid process, Glenoid cavity, Spine",
-//       "Depressions: Subscapular fossa, Supraspinous fossa, Infraspinous fossa",
-//     ],
-//     name: "scapula",
-//   },
-//   clavicle: {
-//     location: "Thoracic (Pectoral Girdle)",
-//     size: "15-18 cm",
-//     shape: "Long",
-//     articulations: {
-//       sternal: "Sternum (sternal notch)",
-//       acromial: "Scapula (acromion)",
-//     },
-//     passages: [],
-//     other: ["Projections: Acromial end, Sternal end"],
-//     name: "clavicle",
-//   },
-//   c1: {
-//     location: "Vertebral Column (Cervical)",
-//     size: "7 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       occipitalCondyles: "Skull (occipital condyles)",
-//       axis: "C2 (axis)",
-//     },
-//     passages: ["Vertebral foramen"],
-//     other: ["Projections: Anterior and Posterior arches, Lateral masses"],
-//     name: "c1",
-//   },
-//   c2: {
-//     location: "Vertebral Column (Cervical)",
-//     size: "6 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       atlas: "C1 (atlas)",
-//       c3: "C3 (vertebra)",
-//     },
-//     passages: ["Vertebral foramen"],
-//     other: ["Projections: Odontoid process (Dens)"],
-//     name: "c2",
-//   },
-//   c3: {
-//     location: "Vertebral Column (Cervical)",
-//     size: "6-7 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       c2: "C2 (axis)",
-//       c4: "C4 (vertebra)",
-//     },
-//     passages: ["Vertebral foramen"],
-//     other: [
-//       "Projections: Spinous process, Transverse processes, Articular processes",
-//       "Depressions: Vertebral foramen",
-//     ],
-//     name: "c3",
-//   },
-//   c7: {
-//     location: "Vertebral Column (Cervical)",
-//     size: "6-7 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       c6: "C6 (vertebra)",
-//       t1: "T1 (thoracic vertebra)",
-//     },
-//     passages: ["Vertebral foramen"],
-//     other: ["Projections: Long spinous process"],
-//     name: "c7",
-//   },
-//   t1: {
-//     location: "Vertebral Column (Thoracic)",
-//     size: "7-8 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       c7: "C7 (vertebra)",
-//       t2: "T2 (thoracic vertebra)",
-//       ribs: ["1st pair of ribs (costal facet)"],
-//     },
-//     passages: ["Vertebral foramen"],
-//     other: [
-//       "Projections: Spinous process, Transverse processes, Articular processes",
-//       "Depressions: Vertebral foramen",
-//     ],
-//     name: "t1",
-//   },
-//   t12: {
-//     location: "Vertebral Column (Thoracic)",
-//     size: "7-8 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       t11: "T11 (thoracic vertebra)",
-//       l1: "L1 (lumbar vertebra)",
-//       ribs: ["12th pair of ribs (costal facet)"],
-//     },
-//     passages: ["Vertebral foramen"],
-//     other: [
-//       "Projections: Spinous process, Transverse processes, Articular processes",
-//       "Depressions: Vertebral foramen",
-//     ],
-//     name: "t12",
-//   },
-//   l1: {
-//     location: "Vertebral Column (Lumbar)",
-//     size: "10-11 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       t12: "T12 (thoracic vertebra)",
-//       l2: "L2 (lumbar vertebra)",
-//     },
-//     passages: ["Vertebral foramen"],
-//     other: [
-//       "Projections: Spinous process, Transverse processes, Articular processes",
-//       "Depressions: Vertebral foramen",
-//     ],
-//     name: "l1",
-//   },
-//   l5: {
-//     location: "Vertebral Column (Lumbar)",
-//     size: "10-11 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       l4: "L4 (lumbar vertebra)",
-//       sacrum: "Sacrum",
-//     },
-//     passages: ["Vertebral foramen"],
-//     other: [
-//       "Projections: Spinous process, Transverse processes, Articular processes",
-//       "Depressions: Vertebral foramen",
-//     ],
-//     name: "l5",
-//   },
-//   sacrum: {
-//     location: "Pelvis",
-//     size: "11-13 cm",
-//     shape: "Triangular",
-//     articulations: {
-//       l5: "L5 (lumbar vertebra)",
-//       ilium: "Ilium (pelvis) - on each side",
-//     },
-//     passages: ["Sacral foramina (for nerves)", "Sacral canal"],
-//     other: ["Fused vertebrae (S1-S5)"],
-//     name: "sacrum",
-//   },
-//   coccyx: {
-//     location: "Pelvis",
-//     size: "1-1.5 cm",
-//     shape: "Triangular",
-//     articulations: {
-//       sacrum: "Sacrum",
-//     },
-//     passages: [],
-//     other: ["Fused rudimentary vertebrae (usually 4)"],
-//     name: "coccyx",
-//   },
-//   ilium: {
-//     location: "Pelvis",
-//     size: "23-26 cm",
-//     shape: "Fan-shaped",
-//     articulations: {
-//       sacrum: "Sacrum (on each side)",
-//       ischium: "Ischium (pelvis)",
-//       pubis: "Pubis (pelvis)",
-//       femur: "Femur (acetabulum)",
-//     },
-//     passages: ["Iliac fossa"],
-//     other: [
-//       "Projections: Iliac crest, Anterior and posterior superior iliac spines",
-//     ],
-//     name: "ilium",
-//   },
-//   ischium: {
-//     location: "Pelvis",
-//     size: "18-21 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       ilium: "Ilium (pelvis)",
-//       pubis: "Pubis (pelvis)",
-//     },
-//     passages: ["Ischial notch"],
-//     other: ["Projections: Ischial tuberosity"],
-//     name: "ischium",
-//   },
-//   pubis: {
-//     location: "Pelvis",
-//     size: "15-16 cm",
-//     shape: "Quadrilateral",
-//     articulations: {
-//       ilium: "Ilium (pelvis)",
-//       ischium: "Ischium (pelvis)",
-//     },
-//     passages: ["Obturator foramen"],
-//     other: ["Projections: Pubic symphysis"],
-//     name: "pubis",
-//   },
-//   mandible: {
-//     location: "Skull",
-//     size: "10-12 cm",
-//     shape: "Horseshoe",
-//     articulations: {
-//       temporal: "Temporal bone (mandibular fossa)",
-//     },
-//     passages: ["Mandibular canal (for nerves and vessels)"],
-//     other: ["Projections: Condylar process, Coronoid process"],
-//     name: "mandible",
-//   },
-//   maxilla: {
-//     location: "Skull",
-//     size: "12-14 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       frontal: "Frontal bone",
-//       zygomatic: "Zygomatic bone",
-//       palatine: "Palatine bone",
-//       vomer: "Vomer bone",
-//       ethmoid: "Ethmoid bone",
-//       mandibular: "Mandible",
-//     },
-//     passages: ["Maxillary sinus"],
-//     other: ["Projections: Alveolar process (holds teeth)"],
-//     name: "maxilla",
-//   },
-//   zygomatic: {
-//     location: "Skull",
-//     size: "4-5 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       maxilla: "Maxilla",
-//       frontal: "Frontal bone",
-//       temporal: "Temporal bone",
-//       sphenoid: "Sphenoid bone",
-//     },
-//     passages: [],
-//     other: ["Projections: Zygomatic arch"],
-//     name: "zygomatic",
-//   },
-//   frontal: {
-//     location: "Skull",
-//     size: "11-12 cm",
-//     shape: "Scalloped",
-//     articulations: {
-//       parietal: "Parietal bone (on each side)",
-//       sphenoid: "Sphenoid bone",
-//       ethmoid: "Ethmoid bone",
-//       maxilla: "Maxilla",
-//       zygomatic: "Zygomatic bone",
-//     },
-//     passages: ["Frontal sinuses"],
-//     other: ["Projections: Supraorbital margin, Glabella"],
-//     name: "frontal",
-//   },
-//   parietal: {
-//     location: "Skull",
-//     size: "12-13 cm",
-//     shape: "Quadrilateral",
-//     articulations: {
-//       frontal: "Frontal bone",
-//       occipital: "Occipital bone",
-//       temporal: "Temporal bone (on each side)",
-//       sphenoid: "Sphenoid bone",
-//     },
-//     passages: [],
-//     other: ["Projections: Sagittal suture, Lambdoid suture"],
-//     name: "parietal",
-//   },
-//   temporal: {
-//     location: "Skull",
-//     size: "11-12 cm",
-//     shape: "Complex",
-//     articulations: {
-//       parietal: "Parietal bone",
-//       occipital: "Occipital bone",
-//       sphenoid: "Sphenoid bone",
-//       zygomatic: "Zygomatic bone",
-//       mandibular: "Mandible (mandibular fossa)",
-//     },
-//     passages: ["Mastoid air cells", "Carotid canal"],
-//     other: ["Projections: Mastoid process, Zygomatic process"],
-//     name: "temporal",
-//   },
-//   occipital: {
-//     location: "Skull",
-//     size: "12-14 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       parietal: "Parietal bone (on each side)",
-//       sphenoid: "Sphenoid bone",
-//       atlas: "Atlas (C1 vertebra)",
-//     },
-//     passages: ["Foramen magnum"],
-//     other: ["Projections: Occipital condyle"],
-//     name: "occipital",
-//   },
-//   sphenoid: {
-//     location: "Skull",
-//     size: "8-9 cm",
-//     shape: "Butterfly-shaped",
-//     articulations: {
-//       frontal: "Frontal bone",
-//       parietal: "Parietal bone (on each side)",
-//       temporal: "Temporal bone (on each side)",
-//       occipital: "Occipital bone",
-//       ethmoid: "Ethmoid bone",
-//       vomer: "Vomer bone",
-//       zygomatic: "Zygomatic bone",
-//       maxilla: "Maxilla",
-//       palatine: "Palatine bone",
-//     },
-//     passages: ["Sphenoid sinus", "Optic canal"],
-//     other: ["Projections: Greater wing, Lesser wing"],
-//     name: "sphenoid",
-//   },
-//   ethmoid: {
-//     location: "Skull",
-//     size: "3-4 cm",
-//     shape: "Cuboid",
-//     articulations: {
-//       frontal: "Frontal bone",
-//       sphenoid: "Sphenoid bone",
-//       vomer: "Vomer bone",
-//       maxilla: "Maxilla",
-//       palatine: "Palatine bone",
-//       nasal: "Nasal bone (on each side)",
-//       lacrimal: "Lacrimal bone (on each side)",
-//     },
-//     passages: ["Ethmoid sinuses"],
-//     other: [
-//       "Projections: Cribriform plate (allows nerves to pass), Perpendicular plate (forms part of nasal septum)",
-//     ],
-//     name: "ethmoid",
-//   },
-//   vomer: {
-//     location: "Skull",
-//     size: "2-3 cm",
-//     shape: "V-shaped",
-//     articulations: {
-//       sphenoid: "Sphenoid bone",
-//       ethmoid: "Ethmoid bone",
-//       maxilla: "Maxilla (palatine process)",
-//       palatine: "Palatine bone",
-//       nasal: "Nasal bone (on each side)",
-//     },
-//     passages: [],
-//     other: ["Forms lower part of nasal septum"],
-//     name: "vomer",
-//   },
-//   nasal: {
-//     location: "Skull",
-//     size: "5-6 cm",
-//     shape: "Flat",
-//     articulations: {
-//       frontal: "Frontal bone",
-//       ethmoid: "Ethmoid bone",
-//       maxilla: "Maxilla (frontal process)",
-//       vomer: "Vomer bone (on each side)",
-//     },
-//     passages: [],
-//     other: ["Forms bridge of the nose"],
-//     name: "nasal",
-//   },
-//   lacrimal: {
-//     location: "Skull",
-//     size: "1-2 cm",
-//     shape: "Thin plate",
-//     articulations: {
-//       frontal: "Frontal bone",
-//       ethmoid: "Ethmoid bone",
-//       maxilla: "Maxilla",
-//       palatine: "Palatine bone",
-//       zygomatic: "Zygomatic bone",
-//     },
-//     passages: ["Lacrimal canal (for tears)"],
-//     other: ["Forms part of the eye socket"],
-//     name: "lacrimal",
-//   },
-//   palatine: {
-//     location: "Skull",
-//     size: "5-6 cm",
-//     shape: "L-shaped",
-//     articulations: {
-//       maxilla: "Maxilla",
-//       vomer: "Vomer bone",
-//       sphenoid: "Sphenoid bone",
-//       ethmoid: "Ethmoid bone",
-//       lacrimal: "Lacrimal bone",
-//     },
-//     passages: ["Greater palatine canals (for nerves and vessels)"],
-//     other: ["Forms part of the hard palate and floor of the nasal cavity"],
-//     name: "palatine",
-//   },
-//   sternum: {
-//     location: "Thorax",
-//     size: "17-20 cm",
-//     shape: "Flat",
-//     articulations: {
-//       clavicle: "Clavicle (sternal notch)",
-//       ribs: "Costal cartilages of ribs 1-7",
-//     },
-//     passages: [],
-//     other: ["Projections: Manubrium, Body, Xiphoid process"],
-//     name: "sternum",
-//   },
-//   "rib 1": {
-//     location: "Thorax",
-//     size: "Variable",
-//     shape: "Long, curved",
-//     articulations: {
-//       T1: "(thoracic vertebra)",
-//       sternum: "Sternum (costal cartilage)",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 1",
-//   },
-//   "rib 2": {
-//     location: "Thorax",
-//     size: "42-48 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T2: "(thoracic vertebra)",
-//       sternum: "Sternum (costal cartilage)",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 2",
-//   },
-//   "rib 3": {
-//     location: "Thorax",
-//     size: "43-49 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T3: "(thoracic vertebra)",
-//       sternum: "Sternum (costal cartilage)",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 3",
-//   },
-//   "rib 4": {
-//     location: "Thorax",
-//     size: "44-50 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T4: "(thoracic vertebra)",
-//       sternum: "Sternum (costal cartilage)",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 4",
-//   },
-//   "rib 5": {
-//     location: "Thorax",
-//     size: "45-51 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T5: "",
-//       sternum: "Sternum (costal cartilage)",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 5",
-//   },
-//   "rib 6": {
-//     location: "Thorax",
-//     size: "46-52 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T6: "",
-//       sternum: "Sternum (costal cartilage)",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 6",
-//   },
-//   "rib 7": {
-//     location: "Thorax",
-//     size: "47-53 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T7: "",
-//       sternum: "Sternum (costal cartilage)",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 7",
-//   },
-//   "rib 8": {
-//     location: "Thorax",
-//     size: "48-54 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T8: "",
-//       costal_cartilage: "Costal cartilage of rib 7",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 8",
-//   },
-//   "rib 9": {
-//     location: "Thorax",
-//     size: "49-55 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T9: "",
-//       costal_cartilage: "Costal cartilage of rib 8",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 9",
-//   },
-//   "rib 10": {
-//     location: "Thorax",
-//     size: "50-56 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T10: "",
-//       costal_cartilage: "Costal cartilage of rib 9",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft"],
-//     name: "rib 10",
-//   },
-//   "rib 11": {
-//     location: "Thorax",
-//     size: "45-51 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T11: "",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft", "Floating rib - no connection to the sternum"],
-//     name: "rib 11",
-//   },
-//   "rib 12": {
-//     location: "Thorax",
-//     size: "40-46 cm",
-//     shape: "Long, curved",
-//     articulations: {
-//       T12: "",
-//     },
-//     passages: [],
-//     other: ["Head, Neck, Shaft", "Floating rib - no connection to the sternum"],
-//     name: "rib 12",
-//   },
-//   scaphoid: {
-//     location: "Wrist",
-//     size: "1-1.5 cm",
-//     shape: "Boat-shaped",
-//     articulations: {
-//       radius: "Radius (right)",
-//       lunate: "Lunate bone (right)",
-//       capitate: "Capitate bone (right)",
-//       trapezium: "Trapezium bone (right)",
-//     },
-//     passages: [],
-//     other: [],
-//     name: "scaphoid",
-//   },
-//   lunate: {
-//     location: "Wrist",
-//     size: "1-1.5 cm",
-//     shape: "Moon-shaped",
-//     articulations: {
-//       radius: "Radius (right)",
-//       scaphoid: "Scaphoid bone (right)",
-//       capitate: "Capitate bone (right)",
-//       hamate: "Hamate bone (right)",
-//       triquetral: "Triquetral bone (right)",
-//     },
-//     passages: [],
-//     other: [],
-//     name: "lunate",
-//   },
-//   triquetral: {
-//     location: "Wrist",
-//     size: "1-1.5 cm",
-//     shape: "Triangular",
-//     articulations: {
-//       ulna: "Ulna (right)",
-//       lunate: "Lunate bone (right)",
-//       pisiform: "Pisiform bone (right)",
-//       hamate: "Hamate bone (right)",
-//     },
-//     passages: [],
-//     other: [],
-//     name: "triquetral",
-//   },
-//   pisiform: {
-//     location: "Wrist",
-//     size: "0.8-1 cm",
-//     shape: "Pea-shaped",
-//     articulations: {
-//       ulna: "Ulna (right)",
-//       triquetral: "Triquetral bone (right)",
-//     },
-//     passages: [],
-//     other: [],
-//     name: "pisiform",
-//   },
-//   hamate: {
-//     location: "Wrist",
-//     size: "2-2.5 cm",
-//     shape: "Hook-shaped",
-//     articulations: {
-//       lunate: "Lunate bone (right)",
-//       triquetral: "Triquetral bone (right)",
-//       capitate: "Capitate bone (right)",
-//       "Metacarpal IV": "",
-//       "Metacarpal V": "(right)",
-//     },
-//     passages: [],
-//     other: ["Hook of the hamate - attachment point for flexor retinaculum"],
-//     name: "hamate",
-//   },
-//   trapezoid: {
-//     location: "Wrist",
-//     size: "1-1.5 cm",
-//     shape: "Wedge-shaped",
-//     articulations: {
-//       scaphoid: "Scaphoid bone (right)",
-//       trapezium: "Trapezium bone (right)",
-//       capitate: "Capitate bone (right)",
-//       "Metacarpal I": "",
-//     },
-//     passages: [],
-//     other: [],
-//     name: "trapezoid",
-//   },
-//   trapezium: {
-//     location: "Wrist",
-//     size: "1-1.5 cm",
-//     shape: "Saddle-shaped",
-//     articulations: {
-//       scaphoid: "Scaphoid bone (right)",
-//       trapezoid: "Trapezoid bone (right)",
-//       "Metacarpal I": "",
-//     },
-//     passages: [],
-//     other: [],
-//     name: "trapezium",
-//   },
-//   capitate: {
-//     location: "Wrist",
-//     size: "2-2.5 cm",
-//     shape: "Irregular",
-//     articulations: {
-//       scaphoid: "Scaphoid bone (right)",
-//       lunate: "Lunate bone (right)",
-//       hamate: "Hamate bone (right)",
-//       "Metacarpal III": "",
-//     },
-//     passages: [],
-//     other: [],
-//     name: "capitate",
-//   },
-//   "metacarpal I": {
-//     location: "Hand",
-//     size: "4-5 cm",
-//     shape: "Long",
-//     articulations: {
-//       trapezium: "Trapezium bone (right)",
-//       "proxmial phalanx I": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "metacarpal I",
-//   },
-//   "metacarpal II": {
-//     location: "Hand",
-//     size: "4.5-5.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       trapezoid: "Trapezoid bone (right)",
-//       "proxmial phalanx II": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "metacarpal II",
-//   },
-//   "metacarpal III": {
-//     location: "Hand",
-//     size: "5-6 cm",
-//     shape: "Long",
-//     articulations: {
-//       capitate: "Capitate bone (right)",
-//       "proxmial phalanx III": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "metacarpal III",
-//   },
-//   "metacarpal IV": {
-//     location: "Hand",
-//     size: "4.5-5.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       hamate: "Hamate bone (right)",
-//       "proximal phalanx IV": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "metacarpal IV",
-//   },
-//   "metacarpal V": {
-//     location: "Hand",
-//     size: "4-5 cm",
-//     shape: "Long",
-//     articulations: {
-//       hamate: "Hamate bone (right)",
-//       "proximal phalanx V": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "metacarpal V",
-//   },
-//   "proximal phalanx V (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal V": "Metacarpal 5 (right)",
-//       "middle phalanx V": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx V (manual)",
-//   },
-//   "proximal phalanx IV (manual)": {
-//     location: "Hand",
-//     size: "3.5-4 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal IV": "Metacarpal 5 (right)",
-//       "middle phalanx IV": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx IV (manual)",
-//   },
-//   "proximal phalanx III (manual)": {
-//     location: "Hand",
-//     size: "4-4.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal III": "Metacarpal 5 (right)",
-//       "middle phalanx III": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx III (manual)",
-//   },
-//   "proximal phalanx II (manual)": {
-//     location: "Hand",
-//     size: "4.5-5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal II": "Metacarpal 5 (right)",
-//       "middle phalanx II": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx II (manual)",
-//   },
-//   "proximal phalanx I (manual)": {
-//     location: "Hand",
-//     size: "6-7 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal I": "Metacarpal 5 (right)",
-//       "middle phalanx I": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx I (manual)",
-//   },
-//   "middle phalanx II (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "proximal phalanx II": "Proximal phalanx 1 (right)",
-//       "distal phalanx II": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "middle phalanx II (manual)",
-//   },
-//   "middle phalanx III (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "proximal phalanx III": "Proximal phalanx 1 (right)",
-//       "distal phalanx III": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "middle phalanx III (manual)",
-//   },
-//   "middle phalanx IV (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "proximal phalanx IV": "Proximal phalanx 1 (right)",
-//       "distal phalanx IV": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "middle phalanx IV (manual)",
-//   },
-//   "middle phalanx V (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "proximal phalanx V": "Proximal phalanx 1 (right)",
-//       "distal phalanx V": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "middle phalanx V (manual)",
-//   },
-//   "distal phalanx I (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx I": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx I (manual)",
-//   },
-//   "distal phalanx II (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx II": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx II (manual)",
-//   },
-//   "distal phalanx III (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx III": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx III (manual)",
-//   },
-//   "distal phalanx IV (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx IV": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx IV (manual)",
-//   },
-//   "distal phalanx V (manual)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx V": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx V (manual)",
-//   },
-//   patella: {
-//     location: "Knee",
-//     size: "3-4 cm",
-//     shape: "Triangular",
-//     articulations: {
-//       femur: "Femur (thigh bone)",
-//     },
-//     passages: [],
-//     other: ["Sesamoid bone (embedded within a tendon)"],
-//     name: "patella",
-//   },
-//   talus: {
-//     location: "Ankle",
-//     size: "Largest tarsal bone",
-//     shape: "Irregular",
-//     articulations: {
-//       tibia: "Tibia (shin bone)",
-//       calcaneus: "Calcaneus (heel bone)",
-//       navicular: "Navicular bone",
-//     },
-//     passages: [],
-//     other: ["Plays a key role in ankle movement"],
-//     name: "talus",
-//   },
-//   calcaneus: {
-//     location: "Ankle/Foot",
-//     size: "Largest tarsal bone",
-//     shape: "Elongated",
-//     articulations: {
-//       talus: "Talus bone",
-//       cuboid: "Cuboid bone",
-//       "metatarsal I": "First, second, and third metatarsals",
-//       "metatarsal II": "First, second, and third metatarsals",
-//       "metatarsal III": "First, second, and third metatarsals",
-//     },
-//     passages: [],
-//     other: ["Also known as the heel bone"],
-//     name: "calcaneus",
-//   },
-//   navicular: {
-//     location: "Midfoot",
-//     size: "Cuboid",
-//     shape: "Boat-shaped",
-//     articulations: {
-//       talus: "Talus bone",
-//       "Medial cuneiform": "",
-//       "intermediate cuneiform": "",
-//       "lateral cuneiform": "",
-//     },
-//     passages: [],
-//     other: ["Connects the talus to the midfoot bones"],
-//     name: "navicular",
-//   },
-//   "medial cuneiform": {
-//     location: "Midfoot",
-//     size: "Smallest cuneiform bone",
-//     shape: "Wedge-shaped",
-//     articulations: {
-//       navicular: "Navicular bone",
-//       "metatarsal I": "First metatarsal bone",
-//       "medial cuneiform": "Intermediate cuneiform bone",
-//     },
-//     passages: [],
-//     other: ["Located on the medial side of the midfoot"],
-//     name: "medial cuneiform",
-//   },
-//   "intermediate cuneiform": {
-//     location: "Midfoot",
-//     size: "Middle-sized cuneiform bone",
-//     shape: "Wedge-shaped",
-//     articulations: {
-//       navicular: "Navicular bone",
-//       "metatarsal II": "Second metatarsal bone",
-//       "medial cuneiform": "",
-//       "lateral cuneiform": "Medial and lateral cuneiform bones",
-//     },
-//     passages: [],
-//     other: ["Located between the medial and lateral cuneiform bones"],
-//     name: "intermediate cuneiform",
-//   },
-//   "lateral cuneiform": {
-//     location: "Midfoot",
-//     size: "Largest cuneiform bone",
-//     shape: "Wedge-shaped",
-//     articulations: {
-//       navicular: "Navicular bone",
-//       "metatarsal III": "Third metatarsal bone",
-//       cuboid: "Cuboid bone",
-//       "lateral cuneiform": "Intermediate cuneiform bone",
-//     },
-//     passages: [],
-//     other: ["Located on the lateral side of the midfoot"],
-//     name: "lateral cuneiform",
-//   },
-//   cuboid: {
-//     location: "Midfoot",
-//     size: "Variable",
-//     shape: "Cuboid",
-//     articulations: {
-//       calcaneus: "Calcaneus bone",
-//       "lateral cuneiform": "Lateral cuneiform bone",
-//       "metatarsal IV": "Fourth and fifth metatarsals",
-//       "metatarsal V": "Fourth and fifth metatarsals",
-//     },
-//     passages: [],
-//     other: ["Connects the heel bone (calcaneus) to the forefoot"],
-//     name: "cuboid",
-//   },
-//   "metatarsal I": {
-//     location: "Foot (forefoot)",
-//     size: "Shortest and thickest metatarsal",
-//     shape:
-//       "Slightly different from others due to articulation with sesamoid bones",
-//     articulations: {
-//       "medial cuneiform": "First cuneiform bone",
-//       "sesamoid bones": "Two sesamoid bones embedded in the tendons",
-//       "proximal phalanx I": "Proximal phalanx of the hallux (big toe)",
-//     },
-//     passages: [],
-//     other: ["Plays a crucial role in propulsion during walking and running"],
-//     name: "metatarsal I",
-//   },
-//   "metatarsal II": {
-//     location: "Foot (forefoot)",
-//     size: "Longest metatarsal",
-//     shape: "Elongated",
-//     articulations: {
-//       "medial cuneiform": "Medial cuneiform bone",
-//       "proximal phalanx II": "Proximal phalanx of the second toe",
-//     },
-//     passages: [],
-//     other: ["Provides a stable base for the second toe"],
-//     name: "metatarsal II",
-//   },
-//   "metatarsal III": {
-//     location: "Foot (forefoot)",
-//     size: "Variable",
-//     shape: "Elongated",
-//     articulations: {
-//       "lateral cuneiform": "Lateral cuneiform bone",
-//       "proximal phalanx III": "Proximal phalanx of the third toe",
-//     },
-//     passages: [],
-//     other: ["Contributes to the arch of the foot"],
-//     name: "metatarsal III",
-//   },
-//   "metatarsal IV": {
-//     location: "Foot (forefoot)",
-//     size: "Variable",
-//     shape: "Elongated",
-//     articulations: {
-//       cuboid: "Cuboid bone",
-//       "proximal phalanx IV": "Proximal phalanx of the fourth toe",
-//     },
-//     passages: [],
-//     other: ["Provides support for the lateral aspect of the foot"],
-//     name: "metatarsal IV",
-//   },
-//   "metatarsal V": {
-//     location: "Foot (forefoot)",
-//     size: "Second shortest metatarsal",
-//     shape: "Elongated",
-//     articulations: {
-//       cuboid: "Cuboid bone",
-//       "proximal phalanx V": "Proximal phalanx of the fifth toe (pinky toe)",
-//     },
-//     passages: [],
-//     other: ["Provides attachment for the muscles that move the pinky toe"],
-//     name: "metatarsal V",
-//   },
-//   "proximal phalanx V (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal V": "Metacarpal 5 (right)",
-//       "middle phalanx V": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx V (pedal)",
-//   },
-//   "proximal phalanx IV (pedal)": {
-//     location: "Hand",
-//     size: "3.5-4 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal IV": "Metacarpal 5 (right)",
-//       "middle phalanx IV": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx IV (pedal)",
-//   },
-//   "proximal phalanx III (pedal)": {
-//     location: "Hand",
-//     size: "4-4.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal III": "Metacarpal 5 (right)",
-//       "middle phalanx III": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx III (pedal)",
-//   },
-//   "proximal phalanx II (pedal)": {
-//     location: "Hand",
-//     size: "4.5-5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal II": "Metacarpal 5 (right)",
-//       "middle phalanx II": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx II (pedal)",
-//   },
-//   "proximal phalanx I (pedal)": {
-//     location: "Hand",
-//     size: "6-7 cm",
-//     shape: "Long",
-//     articulations: {
-//       "metacarpal I": "Metacarpal 5 (right)",
-//       "middle phalanx I": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "proximal phalanx I (pedal)",
-//   },
-//   "middle phalanx II (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "proximal phalanx II": "Proximal phalanx 1 (right)",
-//       "distal phalanx II": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "middle phalanx II (pedal)",
-//   },
-//   "middle phalanx III (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "proximal phalanx III": "Proximal phalanx 1 (right)",
-//       "distal phalanx III": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "middle phalanx III (pedal)",
-//   },
-//   "middle phalanx IV (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "proximal phalanx IV": "Proximal phalanx 1 (right)",
-//       "distal phalanx IV": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "middle phalanx IV (pedal)",
-//   },
-//   "middle phalanx V (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "proximal phalanx V": "Proximal phalanx 1 (right)",
-//       "distal phalanx V": "(right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "middle phalanx V (pedal)",
-//   },
-//   "distal phalanx I (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx I": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx I (pedal)",
-//   },
-//   "distal phalanx II (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx II": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx II (pedal)",
-//   },
-//   "distal phalanx III (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx III": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx III (pedal)",
-//   },
-//   "distal phalanx IV (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx IV": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx IV (pedal)",
-//   },
-//   "distal phalanx V (pedal)": {
-//     location: "Hand",
-//     size: "3-3.5 cm",
-//     shape: "Long",
-//     articulations: {
-//       "middle phalanx V": "Proximal phalanx 1 (right)",
-//     },
-//     passages: [],
-//     other: ["Base, Shaft, Head"],
-//     name: "distal phalanx V (pedal)",
-//   },
-//   "inferior nasal concha": {
-//     location: "Nasal cavity",
-//     size: "Longest and broadest nasal concha",
-//     shape: "Scroll-shaped",
-//     articulations: {
-//       maxilla: "Maxilla (upper jaw bone)",
-//       "palatine bone": "Palatine bone (roof of the mouth)",
-//     },
-//     passages: [],
-//     other: [
-//       "Spongy bone covered by mucous membrane",
-//       "Increases surface area of the nasal cavity",
-//       "Helps warm, humidify, and filter inhaled air",
-//       "May be absent in some people (embryologic agenesis)",
-//     ],
-//     name: "inferior nasal concha",
-//   },
-//   hyoid: {
-//     location: "Anterior neck",
-//     size: "Horseshoe-shaped",
-//     shape: "U-shaped",
-//     articulations: [],
-//     passages: [],
-//     other: [
-//       "Unique bone - not directly connected to any other bones",
-//       "Supported by muscles, ligaments, and fascia",
-//       "Plays a key role in speech, swallowing, and tongue movement",
-//       "Composed of five parts: body, greater horns, and lesser horns",
-//     ],
-//     name: "hyoid",
-//   },
-//   coxal: {
-//     location: "Pelvis",
-//     size: "Large, flat, and irregularly shaped",
-//     shape: "Composed of three parts that fuse in adulthood",
-//     articulations: {
-//       sacrum: "Sacrum (lower spine)",
-//       femur: "Femur (thigh bone) at the acetabulum",
-//     },
-//     passages: [],
-//     other: [
-//       "Formed by the fusion of the ilium, ischium, and pubis in adults",
-//       "Provides support for the lower body and organs",
-//       "Acetabulum - a cup-shaped socket for the femur head",
-//       "Foramen ovale (opening) allows passage of nerves and blood vessels",
-//     ],
-//     name: "coxal",
-//   },
-//   malleus: {
-//     location: "Middle ear",
-//     size: "Smallest of the ossicles (5-6 mm)",
-//     shape: "Hammer-shaped",
-//     articulations: {
-//       "tympanic membrane": "Tympanic membrane (eardrum)",
-//       incus: "Incus (anvil)",
-//     },
-//     passages: [],
-//     other: ["Manubrium (handle), Head, Lateral process, Medial process"],
-//     name: "malleus",
-//   },
-//   incus: {
-//     location: "Middle ear",
-//     size: "Middle-sized ossicle (6-7 mm)",
-//     shape: "Anvil-shaped",
-//     articulations: {
-//       malleus: "Malleus (hammer)",
-//       stapes: "Stapes (stirrup)",
-//     },
-//     passages: [],
-//     other: ["Body, Lenticular process, Short process, Long process"],
-//     name: "incus",
-//   },
-//   stapes: {
-//     location: "Middle ear",
-//     size: "Smallest and lightest bone in the human body (3-4 mm)",
-//     shape: "Stirrup-shaped",
-//     articulations: {
-//       incus: "Incus (anvil)",
-//       "oval window": "Oval window (of the inner ear)",
-//     },
-//     passages: [],
-//     other: ["Footplate, Crura (legs), Head"],
-//     name: "stapes",
-//   },
-// };
-
 /* helpers for bone data
 
 const countBone = (boneData)=> {
@@ -2574,6 +1195,33 @@ const countBone = (boneData)=> {
         boneCounter+=1}
     return boneCounter
 } 
+
+const boneShapeIntoArray = ()=> {
+for (const key in boneData){
+  const arrayOfShapes= boneData[key].shapes.split(",").map(item => item.trim());
+  boneData[key].shape = arrayOfShapes
+}
+return boneData
+}
+function differentShapes {
+  const shapes = []
+  for (const key in boneData){
+    if (!shapes.includes(boneData[key].shape)){
+      shapes.push(boneData[key].shape)
+    }
+  }
+  return shapes
+}
+
+function differentLocations(boneData) {
+  const locations = []
+  for (const key in boneData){
+    if (!locations.includes(boneData[key].location)){
+      locations.push(boneData[key].location)
+    }
+  }
+  return locations
+}
 
 const nameBones = (boneData)=>{
     const boneNames = []

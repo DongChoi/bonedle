@@ -12,7 +12,6 @@ const Bonedle = ({
 }) => {
   return (
     <div>
-      Welcome!
       {mode === "picture" ? (
         <BlurredPicture />
       ) : mode === "classic" ? (

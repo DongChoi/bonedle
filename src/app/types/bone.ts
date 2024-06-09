@@ -1,7 +1,7 @@
 export interface Bone {
   location: string;
   size: string;
-  shape: string;
+  shape: string[];
   articulations: string[];
   passages: string[];
   other: string[];

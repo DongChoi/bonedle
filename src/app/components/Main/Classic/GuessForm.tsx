@@ -4,18 +4,22 @@ import React, { ChangeEvent, FormEvent, useState } from "react";
 
 const GuessForm = ({
   handleGuessSubmit,
+  guesses,
 }: {
   handleGuessSubmit: FormSubmitHandler;
+  guesses: BoneKey[];
 }) => {
   const [value, setValue] = useState<string>("");
   const [suggestions, setSuggestions] = useState<BoneKey[]>([]);
-
+  const [valueError, setValueError] = useState<Boolean>(false);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const userInput = e.target.value;
     setValue(userInput);
     if (userInput.length > 0) {
-      const filteredSuggestions = boneList.filter((bone) =>
-        (bone as string).toLowerCase().startsWith(userInput.toLowerCase())
+      const filteredSuggestions = boneList.filter(
+        (bone) =>
+          (bone as string).toLowerCase().startsWith(userInput.toLowerCase()) &&
+          !guesses.includes(bone)
       );
       setSuggestions(filteredSuggestions);
     } else {
@@ -25,17 +29,23 @@ const GuessForm = ({
 
   const handleFormSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!boneList.includes(value)) {
+      setValueError(true);
+      return;
+    }
     handleGuessSubmit(value);
   };
 
   const handleSuggestionClick = (suggestion: string) => {
     setValue(suggestion);
+    handleGuessSubmit(suggestion);
     setSuggestions([]);
+    setValue("");
   };
 
   return (
     <div className="relative">
-      <form onSubmit={handleFormSubmit}>
+      <form className="relative w-auto" onSubmit={handleFormSubmit}>
         <input
           className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
           type="text"
@@ -50,7 +60,8 @@ const GuessForm = ({
           Submit
         </button>
         {suggestions.length > 0 && (
-          <ul className="border relative border-gray-300 rounded-md mt-2 max-h-40 overflow-y-auto">
+          // do the css later
+          <ul className="absolute left-0 right-0 border border-gray-300 rounded-md mt-2 max-h-40 overflow-y-auto w-auto bg-white z-10">
             {suggestions.map((suggestion) => (
               <li
                 key={suggestion}
