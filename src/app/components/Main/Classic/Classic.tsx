@@ -5,11 +5,13 @@ import { boneList, boneData } from "@/app/data/bones";
 import { Bone, BoneData, BoneKey } from "@/app/types";
 import GuessForm from "./GuessForm";
 import Guess from "./Guess";
+import FemurFall from "../FemurFall";
 
 const Classic = () => {
   const [guesses, setGuesses] = useState<BoneKey[]>([]);
   const [bone, setBone] = useState<Bone | null>(null);
   const [Hint, setHint] = useState<Boolean>(false);
+
   const randomizeBone = (): Bone => {
     const randomNumber: number = Math.floor(Math.random() * boneList.length);
     const randomBone: Bone = boneData[boneList[randomNumber]];
@@ -37,7 +39,7 @@ const Classic = () => {
   }, []);
 
   return (
-    <div>
+    <div className="flex flex-col  items-center">
       <button
         className={`p-2 rounded-md w-fit border-2 ${
           guesses.length >= 5
@@ -51,29 +53,30 @@ const Classic = () => {
       {Hint && bone && JSON.stringify(bone.other)}
       <GuessForm handleGuessSubmit={handleGuessSubmit} guesses={guesses} />
       {/* question: is it better to map through the guesses here? or should i pass down all of the guesses and do it there? */}
-      {guesses.length > 0 && (
-        <div className="flex space-x-2" id="details-row">
-          <div id="detail-name" className="flex-1">
-            <span>name</span>
+      {bone && guesses.length > 0 && (
+        <div className="flex flex-col">
+          <div className="flex space-x-10 text-2xl" id="details-label-row">
+            <div id="detail-label-name" className="">
+              <span>name</span>
+            </div>
+            <div id="detail-label-location" className="">
+              <span>location</span>
+            </div>
+            <div id="detail-label-shape" className="">
+              <span>shape</span>
+            </div>
+            <div id="detail-label-size" className="">
+              <span>size</span>
+            </div>
+            <div id="detail-label-articulations" className="">
+              <span>articulations</span>
+            </div>
           </div>
-          <div id="detail-location" className="flex-1">
-            <span>location</span>
-          </div>
-          <div id="detail-shape" className="flex-1">
-            <span>shape</span>
-          </div>
-          <div id="detail-size" className="flex-1">
-            <span>size</span>
-          </div>
-          <div id="detail-articulations" className="flex-1">
-            <span>articulations</span>
-          </div>
+          {guesses.map((guess, index) => (
+            <Guess key={index} guessedBone={boneData[guess]} bone={bone} />
+          ))}
         </div>
       )}
-      {bone &&
-        guesses.map((guess, index) => (
-          <Guess key={index} guessedBone={boneData[guess]} bone={bone} />
-        ))}
     </div>
   );
 };

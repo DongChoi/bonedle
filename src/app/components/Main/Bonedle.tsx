@@ -11,7 +11,7 @@ const Bonedle = ({
   updateMode: Function;
 }) => {
   return (
-    <div>
+    <div className="relative flex justify-center p-12">
       {mode === "picture" ? (
         <BlurredPicture />
       ) : mode === "classic" ? (

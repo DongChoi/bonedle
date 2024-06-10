@@ -30,29 +30,29 @@ const Guess = ({ guessedBone, bone }: { guessedBone: Bone; bone: Bone }) => {
 
   return (
     <div className="flex flex-col space-y-2">
-      <div className="flex space-x-2" id="guess-row">
-        <div id="guess-name" className="flex-1">
+      <div className="flex text-base space-x-10 " id="guess-row">
+        <div id="guess-name" className="flex-grow">
           <DetailCard
             guessDetail={guessedBoneName}
             correctDetail={correctBoneName}
           />
         </div>
-        <div id="guess-location" className="flex-1 py-2">
+        <div id="guess-location" className="flex-grow">
           <DetailCard
             guessDetail={guessedBoneLocation}
             correctDetail={correctBoneLocation}
           />
         </div>
-        <div id="guess-shape" className="flex-1">
+        <div id="guess-shape" className="flex-grow">
           <DetailCardArr
             guessDetail={guessedBoneShape}
             correctDetail={correctBoneShape}
           />
         </div>
-        <div id="guess-size" className="flex-1">
+        <div id="guess-size" className="flex-grow">
           <DetailCard guessDetail={"array"} correctDetail={"wrong"} />
         </div>
-        <div id="guess-articulations" className="flex-1">
+        <div id="guess-articulations" className="flex-grow">
           <DetailCardArr
             guessDetail={guessedBoneArticulation}
             correctDetail={correctBoneArticulation}

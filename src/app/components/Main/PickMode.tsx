@@ -1,20 +1,12 @@
 import React from "react";
+import ButtonGame from "./ButtonGame";
 
 const PickMode = ({ updateMode }: { updateMode: Function }) => {
-  const handleModeClick = (selectedMode: string) => {
-    updateMode(selectedMode);
-  };
   return (
-    <div>
-      Pick mode!
-      <li>
-        {" "}
-        <button onClick={() => handleModeClick("classic")}>Classic </button>
-      </li>
-      <li>
-        {" "}
-        <button onClick={() => handleModeClick("picture")}>Picture </button>
-      </li>
+    <div className="flex-col items-center  justify-center align-middle text-3xl">
+      Guess the bone!
+      <ButtonGame updateMode={updateMode} mode={"classic"} />
+      <ButtonGame updateMode={updateMode} mode={"picture"} />
     </div>
   );
 };
