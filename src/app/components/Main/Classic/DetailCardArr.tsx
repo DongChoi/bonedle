@@ -24,11 +24,11 @@ const DetailCardArr = ({
     <div className="group [perspective:1000px]">
       <div
         style={{ animationDelay: `${delay}s` }}
-        className={`rounded-xl transition-all transform-style-preserve-3d animate-flip `}
+        className={`transition-all transform-style-preserve-3d animate-flip`}
       >
         <div className={`h-20 w-full bg-transparent`}></div>
         <div
-          className={`absolute inset-0 ${colorHint} [transform:rotateY(180deg)] [backface-visibility:hidden]`}
+          className={`flex justify-center items-center absolute border-2 border-slate-950 text-sm inset-0 ${colorHint} rounded [transform:rotateY(180deg)] [backface-visibility:hidden]`}
         >
           {guessArray.join(", ")}
         </div>

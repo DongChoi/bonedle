@@ -16,11 +16,11 @@ const DetailCard = ({
     <div className="group [perspective:1000px]">
       <div
         style={{ animationDelay: `${delay}s` }}
-        className={`rounded-xl transition-all  transform-style-preserve-3d animate-flip `}
+        className={`rounded-xl transition-all transform-style-preserve-3d animate-flip `}
       >
-        <div className={`h-20 w-full bg-transparent`}></div>
+        <div className={`h-20 w-full  bg-transparent`}></div>
         <div
-          className={`absolute inset-0 ${colorHint} [transform:rotateY(180deg)] [backface-visibility:hidden]`}
+          className={`flex justify-center items-center absolute text-sm border-slate-950 inset-0 ${colorHint} border-2 rounded [transform:rotateY(180deg)] [backface-visibility:hidden]`}
         >
           {guessDetail}
         </div>

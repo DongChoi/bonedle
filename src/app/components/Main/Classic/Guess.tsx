@@ -57,8 +57,8 @@ const Guess = ({ guessedBone, bone }: { guessedBone: Bone; bone: Bone }) => {
 
       <div id="guess-size" className="flex-grow w-1/5">
         <DetailCard
-          guessDetail={"In Development"}
-          correctDetail={"In Development"}
+          guessDetail={"In Dev"}
+          correctDetail={"In Dev"}
           delay={"3"}
           key={guessedBoneName + "3"}
         />
