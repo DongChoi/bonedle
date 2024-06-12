@@ -1,31 +1,41 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const HintCard = ({
-  showHint,
+  hint,
   NoOfGuesses,
 }: {
-  showHint: Function;
+  hint: string[];
   NoOfGuesses: number;
 }) => {
-  const handleShowHintClick = () => {};
-
+  const [hintActive, setHintActive] = useState<Boolean>(false);
+  const handleRevealHintButtonClick = () => {
+    setHintActive(true);
+  };
   return (
-    <div className="w-2/3">
+    <div
+      className={`flex flex-col w-2/3 rounded-t-lg rounded-br-lg border-2 p-4 m-2 ${
+        NoOfGuesses >= 5
+          ? "border-amber-500 text-amber-500"
+          : "border-slate-700"
+      } `}
+    >
       <button
-        onClick={NoOfGuesses >= 5 ? handleShowHintClick : undefined}
-        className={`flex-col text-left border-2 p-4 m-2 w-full rounded-tl-lg ${
+        onClick={
+          NoOfGuesses >= 5 && hintActive === false
+            ? handleRevealHintButtonClick
+            : undefined
+        }
+        className={` text-left w-full ${
           NoOfGuesses >= 5
             ? "border-amber-500 text-amber-500"
             : "border-slate-700"
         } `}
       >
-        {/* <div className="" onClick={() => handleModeClick(mode)}>
-          {mode.toUpperCase()}
-        </div>
-
-        <p className="text-sm"> {gameDescriptions[mode]}</p> */}
         Hint!
       </button>
+      {hintActive && <p className="text-sm"> {hint.join(". ")}</p>}
     </div>
   );
 };

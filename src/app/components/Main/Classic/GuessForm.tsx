@@ -22,6 +22,7 @@ const GuessForm = ({
           (bone as string).toLowerCase().startsWith(userInput.toLowerCase()) &&
           !guesses.includes(bone)
       );
+      setValueError(false);
       setSuggestions(filteredSuggestions);
     } else {
       setSuggestions([]);
@@ -32,9 +33,11 @@ const GuessForm = ({
     e.preventDefault();
     if (!boneList.includes(value)) {
       setValueError(true);
-      return;
+    } else {
+      handleGuessSubmit(value);
     }
-    handleGuessSubmit(value);
+    setSuggestions([]);
+    setValue("");
   };
 
   const handleSuggestionClick = (suggestion: string) => {
@@ -46,7 +49,7 @@ const GuessForm = ({
 
   return (
     <div className="relative">
-      <form className="relative w-auto" onSubmit={handleFormSubmit}>
+      <form className="relative w-auto " onSubmit={handleFormSubmit}>
         <input
           className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
           type="text"
@@ -60,6 +63,7 @@ const GuessForm = ({
         >
           Submit
         </button>
+        {valueError && <div className="text-red-500">Bone not found</div>}
         {suggestions.length > 0 && (
           // do the css later
           <ul className="absolute left-0 right-0 border border-gray-300 rounded-md mt-2 max-h-40 overflow-y-auto w-auto bg-white z-10">

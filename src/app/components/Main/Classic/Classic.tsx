@@ -7,22 +7,22 @@ import GuessForm from "./GuessForm";
 import Guess from "./Guess";
 import FemurFall from "../FemurFall";
 import HintCard from "../HintCard";
+import ResetGameButton from "../ResetGameButton";
 
 const Classic = () => {
   const [guesses, setGuesses] = useState<BoneKey[]>([]);
   const [bone, setBone] = useState<Bone | null>(null);
-  const [Hint, setHint] = useState<Boolean>(false);
-  const [gameActive, setGameActive] = useState<Boolean>(true);
-
-  const resetGame = () => {};
+  const [gameActiveStatus, setGameActiveStatus] = useState<Boolean>(false);
+  const resetGameState = (): void => {
+    const randomBone = randomizeBone();
+    setBone(randomBone);
+    setGameActiveStatus(true);
+    setGuesses([]);
+  };
   const randomizeBone = (): Bone => {
     const randomNumber: number = Math.floor(Math.random() * boneList.length);
     const randomBone: Bone = boneData[boneList[randomNumber]];
     return randomBone;
-  };
-
-  const showHint = () => {
-    setHint(true);
   };
 
   const handleGuessSubmit = (guessedBone: keyof BoneData): void => {
@@ -30,6 +30,7 @@ const Classic = () => {
       setGuesses([guessedBone, ...guesses]);
     }
     if (bone && guessedBone === bone.name) {
+      setGameActiveStatus(false);
       console.log("yay! confetti animation");
     }
   };
@@ -37,15 +38,20 @@ const Classic = () => {
     const pickBoneOnMount = () => {
       const randomBone = randomizeBone();
       setBone(randomBone);
+      setGameActiveStatus(true);
     };
     pickBoneOnMount();
   }, []);
 
   return (
     <div className="flex flex-col  items-center">
-      <HintCard showHint={showHint} NoOfGuesses={guesses.length} />
-      {Hint && bone && JSON.stringify(bone.other)}
-      <GuessForm handleGuessSubmit={handleGuessSubmit} guesses={guesses} />
+      {bone && <HintCard hint={bone.other} NoOfGuesses={guesses.length} />}
+
+      {gameActiveStatus ? (
+        <GuessForm handleGuessSubmit={handleGuessSubmit} guesses={guesses} />
+      ) : (
+        <ResetGameButton resetGameState={resetGameState} />
+      )}
       {/* question: is it better to map through the guesses here? or should i pass down all of the guesses and do it there? */}
       {bone && guesses.length > 0 && (
         <div className="flex flex-col">
