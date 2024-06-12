@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        skeletons: "url('/bg-skeletons.jpeg')",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
@@ -31,6 +32,7 @@ const config: Config = {
       transitionDuration: {
         "5000": "5000ms",
       },
+
       animationDelay: {
         "0": "0s",
         "100": "0.1s",

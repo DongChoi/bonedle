@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="">
       <Nav updateMode={updateMode} />
       <Bonedle mode={mode} updateMode={updateMode} />
       <Footer />
