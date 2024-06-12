@@ -18,12 +18,13 @@ const HintCard = ({
   return (
     <div
       className={`flex flex-col w-2/3 rounded-t-lg rounded-br-lg border-2 p-4 m-2 ${
-        NoOfGuesses >= 5
+        NoOfGuesses >= 5 || congratulate
           ? "border-amber-500 text-amber-500"
           : "border-slate-700"
       } `}
     >
       <button
+        disabled={!!(hintActive || congratulate || NoOfGuesses <= 5)}
         onClick={
           NoOfGuesses >= 5 && hintActive === false
             ? handleRevealHintButtonClick
