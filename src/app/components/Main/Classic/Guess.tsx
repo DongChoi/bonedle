@@ -29,35 +29,47 @@ const Guess = ({ guessedBone, bone }: { guessedBone: Bone; bone: Bone }) => {
   const guessedBoneSize = guessedBone.size;
 
   return (
-    <div className="flex flex-col space-y-2">
-      <div className="flex text-base space-x-10 " id="guess-row">
-        <div id="guess-name" className="flex-grow">
-          <DetailCard
-            guessDetail={guessedBoneName}
-            correctDetail={correctBoneName}
-          />
-        </div>
-        <div id="guess-location" className="flex-grow">
-          <DetailCard
-            guessDetail={guessedBoneLocation}
-            correctDetail={correctBoneLocation}
-          />
-        </div>
-        <div id="guess-shape" className="flex-grow">
-          <DetailCardArr
-            guessDetail={guessedBoneShape}
-            correctDetail={correctBoneShape}
-          />
-        </div>
-        <div id="guess-size" className="flex-grow">
-          <DetailCard guessDetail={"array"} correctDetail={"wrong"} />
-        </div>
-        <div id="guess-articulations" className="flex-grow">
-          <DetailCardArr
-            guessDetail={guessedBoneArticulation}
-            correctDetail={correctBoneArticulation}
-          />
-        </div>
+    <div className="flex py-2 space-x-2 w-full" id="guess-row">
+      <div id="guess-name" className="flex-grow w-1/5">
+        <DetailCard
+          guessDetail={guessedBoneName}
+          correctDetail={correctBoneName}
+          delay={"0"}
+          key={guessedBoneName + "0"}
+        />
+      </div>
+      <div id="guess-location" className="flex-grow w-1/5">
+        <DetailCard
+          guessDetail={guessedBoneLocation}
+          correctDetail={correctBoneLocation}
+          delay={"1"}
+          key={guessedBoneName + "1"}
+        />
+      </div>
+      <div id="guess-shape" className="flex-grow  w-1/5">
+        <DetailCardArr
+          guessDetail={guessedBoneShape}
+          correctDetail={correctBoneShape}
+          delay={"2"}
+          key={guessedBoneName + "2"}
+        />
+      </div>
+
+      <div id="guess-size" className="flex-grow w-1/5">
+        <DetailCard
+          guessDetail={"In Development"}
+          correctDetail={"wrong"}
+          delay={"3"}
+          key={guessedBoneName + "3"}
+        />
+      </div>
+      <div id="guess-articulations" className="flex-grow w-1/5">
+        <DetailCardArr
+          guessDetail={guessedBoneArticulation}
+          correctDetail={correctBoneArticulation}
+          delay={"4"}
+          key={guessedBoneName + "4"}
+        />
       </div>
     </div>
   );
