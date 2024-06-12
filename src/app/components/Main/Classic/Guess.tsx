@@ -42,7 +42,7 @@ const Guess = ({ guessedBone, bone }: { guessedBone: Bone; bone: Bone }) => {
         <DetailCard
           guessDetail={guessedBoneLocation}
           correctDetail={correctBoneLocation}
-          delay={"1"}
+          delay={".5"}
           key={guessedBoneName + "1"}
         />
       </div>
@@ -50,7 +50,7 @@ const Guess = ({ guessedBone, bone }: { guessedBone: Bone; bone: Bone }) => {
         <DetailCardArr
           guessDetail={guessedBoneShape}
           correctDetail={correctBoneShape}
-          delay={"2"}
+          delay={"1"}
           key={guessedBoneName + "2"}
         />
       </div>
@@ -59,7 +59,7 @@ const Guess = ({ guessedBone, bone }: { guessedBone: Bone; bone: Bone }) => {
         <DetailCard
           guessDetail={"In Dev"}
           correctDetail={"In Dev"}
-          delay={"3"}
+          delay={"1.5"}
           key={guessedBoneName + "3"}
         />
       </div>
@@ -67,7 +67,7 @@ const Guess = ({ guessedBone, bone }: { guessedBone: Bone; bone: Bone }) => {
         <DetailCardArr
           guessDetail={guessedBoneArticulation}
           correctDetail={correctBoneArticulation}
-          delay={"4"}
+          delay={"2"}
           key={guessedBoneName + "4"}
         />
       </div>

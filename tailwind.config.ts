@@ -26,7 +26,7 @@ const config: Config = {
         },
       },
       animation: {
-        flip: "flip 5s forwards",
+        flip: "flip 2s forwards",
       },
       transitionDuration: {
         "5000": "5000ms",

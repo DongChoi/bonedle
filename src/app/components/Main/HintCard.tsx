@@ -24,7 +24,7 @@ const HintCard = ({
       } `}
     >
       <button
-        disabled={!!(hintActive || congratulate || NoOfGuesses <= 5)}
+        disabled={!!(hintActive || congratulate || NoOfGuesses < 5)}
         onClick={
           NoOfGuesses >= 5 && hintActive === false
             ? handleRevealHintButtonClick
