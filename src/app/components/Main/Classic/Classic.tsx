@@ -13,11 +13,13 @@ const Classic = () => {
   const [guesses, setGuesses] = useState<BoneKey[]>([]);
   const [bone, setBone] = useState<Bone | null>(null);
   const [gameActiveStatus, setGameActiveStatus] = useState<Boolean>(false);
+  const [congratulate, setCongratulate] = useState<Boolean>(false);
   const resetGameState = (): void => {
     const randomBone = randomizeBone();
     setBone(randomBone);
     setGameActiveStatus(true);
     setGuesses([]);
+    setCongratulate(false);
   };
   const randomizeBone = (): Bone => {
     const randomNumber: number = Math.floor(Math.random() * boneList.length);
@@ -31,6 +33,7 @@ const Classic = () => {
     }
     if (bone && guessedBone === bone.name) {
       setGameActiveStatus(false);
+      setCongratulate(true);
       console.log("yay! confetti animation");
     }
   };
@@ -45,7 +48,13 @@ const Classic = () => {
 
   return (
     <div className="flex flex-col  items-center">
-      {bone && <HintCard hint={bone.other} NoOfGuesses={guesses.length} />}
+      {bone && (
+        <HintCard
+          hint={bone.other}
+          NoOfGuesses={guesses.length}
+          congratulate={congratulate}
+        />
+      )}
 
       {gameActiveStatus ? (
         <GuessForm handleGuessSubmit={handleGuessSubmit} guesses={guesses} />
@@ -93,6 +102,7 @@ const Classic = () => {
           ))}
         </div>
       )}
+      {congratulate && <FemurFall />}
     </div>
   );
 };

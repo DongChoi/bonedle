@@ -5,9 +5,11 @@ import React, { useState } from "react";
 const HintCard = ({
   hint,
   NoOfGuesses,
+  congratulate,
 }: {
   hint: string[];
   NoOfGuesses: number;
+  congratulate: Boolean;
 }) => {
   const [hintActive, setHintActive] = useState<Boolean>(false);
   const handleRevealHintButtonClick = () => {
@@ -35,7 +37,9 @@ const HintCard = ({
       >
         Hint!
       </button>
-      {hintActive && <p className="text-sm"> {hint.join(". ")}</p>}
+      {(hintActive || congratulate) && (
+        <p className="text-sm"> {hint.join(". ")}</p>
+      )}
     </div>
   );
 };

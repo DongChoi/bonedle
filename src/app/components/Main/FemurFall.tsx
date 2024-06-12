@@ -60,7 +60,7 @@ const FemurFall: React.FC = () => {
 
       // Remove bones that have fallen out of view
       for (let i = objects.length - 1; i >= 0; i--) {
-        if (objects[i].y > canvas.height + objects[i].height) {
+        if (objects[i].y > canvas.height * 3 + objects[i].height * 3) {
           objects.splice(i, 1);
         }
       }
@@ -70,7 +70,7 @@ const FemurFall: React.FC = () => {
         const newBone = {
           x: Math.random() * canvas.width,
           y: -50, // Start above the canvas
-          speed: Math.random() * 2 + 1, // Random speed
+          speed: Math.random() * 2 + 5, // Random speed
           rotation: Math.random() * Math.PI * 2, // Random rotation
           image: Math.random() > 0.5 ? femurImage : tibiaImage, // Randomly choose between femur and tibia
           width: 20, // Adjust based on actual image dimensions
@@ -94,7 +94,18 @@ const FemurFall: React.FC = () => {
     return () => setIsAnimating(false);
   }, [isAnimating]);
 
-  return <canvas ref={canvasRef} width={800} height={600} />;
+  return (
+    <>
+      {isAnimating && (
+        <canvas
+          ref={canvasRef}
+          width={800}
+          height={600}
+          className="absolute top-0 left-0 w-full h-full z-50"
+        />
+      )}
+    </>
+  );
 };
 
 export default FemurFall;
